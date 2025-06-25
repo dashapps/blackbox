@@ -1,0 +1,18 @@
+
+@import '@fontsource-variable/geologica';
+@import '@fontsource/jetbrains-mono';
+:root {
+  
+  --sl-font-system: 'Geologica Variable', sans-serif;
+    --sl-font-system-mono: 'JetBrains Mono', monospace;
+  --sl-content-width: 50rem;
+    --sl-text-5xl: 3.5rem;
+    --my-radius: 8px 24px 8px 24px;
+}
+
+.my-button {
+  border-radius: var(--my-radius);
+  background: #ECF3F3;
+  padding: 2rem;
+  margin: 2rem 0;
+}

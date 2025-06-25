@@ -3,15 +3,64 @@
 @import '@astrojs/starlight-tailwind';
 @import 'tailwindcss/theme.css' layer(theme);
 @import 'tailwindcss/utilities.css' layer(utilities);
+@import "tailwindcss";
+@import '@fontsource-variable/geologica';
+@import "@fontsource/jetbrains-mono";
 
-@theme {
-	/*
-	Configure your Tailwind theme that will be used by Starlight.
-	https://starlight.astro.build/guides/css-and-tailwind/#styling-starlight-with-tailwind
-	*/
+
+:root {
+  --font-sans: 'Geologica Variable', sans-serif;
+  --font-serif: 'Geologica Variable', serif;
+  --font-system: 'Geologica Variable', sans-serif;
+  --font-system-mono: 'JetBrains Mono', monospace;
+  --font-heading: 'Geologica Variable', sans-serif;
+  --font-heading-mono: 'JetBrains Mono', monospace;
+  --font-display: 'Geologica Variable', sans-serif;
+  --font-display-mono: 'JetBrains Mono', monospace;
+  --font-body: 'Geologica Variable', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+  /* Generated accent color palettes. */
+  --color-accent-200: #66EB69;
+  --color-accent-600: #1BD91F;
+  --color-accent-900: #13AD16;
+  --color-accent-950: #107F13;
+  /* Generated gray color palettes. */
+  --color-gray-100: #F9FBFB;
+  --color-gray-200: #ECF3F3;
+  --color-gray-300: #D6E4E5;
+  --color-gray-400: #788DAB;
+  --color-gray-500: #465975;
+  --color-gray-700: #1D2F49;
+  --color-gray-800: #101A28;
+  --color-gray-900: #0F1724;
 }
 
-/*
-Add additional Tailwind styles to this file:
-https://tailwindcss.com/docs/adding-custom-styles#using-custom-css
-*/
+body {
+  font-family: var(--font-sans);
+  font-variation-settings:
+    "slnt" 0,
+    "wght" 400,
+    "CRSV" 1,
+    "SHRP" 26;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-sans);
+  font-variation-settings:
+    "slnt" 0,
+    "wght" 800,
+    "CRSV" 0.6,
+    "SHRP" 29;
+}
+
+.button{
+  border-radius: 8px 24px 8px 24px;
+}
+
+.test-font {
+  font-family: 'JetBrains Mono' !important;
+  font-size: 2rem;
+  color: red;
+}
+
+
