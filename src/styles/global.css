@@ -150,4 +150,7 @@ body li {
   border-radius: 8px 24px 24px 8px !important;
 }
 
-
+.tg-custom {
+  --sl-link-button-bg: #229ED9 !important; /* пример: фирменный цвет Telegram */
+  --sl-link-button-color: #fff !important;
+}
