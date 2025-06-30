@@ -1,4 +1,4 @@
-export default {
+{
   "skipLink.label": "Zum Inhalt springen",
   "search.label": "Suche",
   "search.ctrlKey": "Strg",
@@ -40,4 +40,4 @@ export default {
   "pagefind.alt_search": "Keine Ergebnisse für [SEARCH_TERM]. Stattdessen werden Ergebnisse für [DIFFERENT_TERM] angezeigt",
   "pagefind.search_suggestion": "Keine Ergebnisse für [SEARCH_TERM]. Versuchen Sie eine der folgenden Suchen:",
   "pagefind.searching": "Suche nach [SEARCH_TERM]..."
-};
+}

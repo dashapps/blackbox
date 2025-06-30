@@ -22,11 +22,35 @@ export default defineConfig({
 			],
 			sidebar: [
 				{
+					label: 'Channels',
+					autogenerate: { directory: 'channels' },
+				},
+				{
 					label: 'Guides',
 					items: [
 						// Each item here is one entry in the navigation menu.
 						{ label: 'Example Guide', slug: 'guides/example' },
 					],
+				},
+				{
+					label: 'Intro',
+					autogenerate: { directory: 'intro' },
+				},
+				{
+					label: 'Start',
+					autogenerate: { directory: 'start' },
+				},
+				{
+					label: 'Pipeline',
+					autogenerate: { directory: 'pipeline' },
+				},
+				{
+					label: 'Wiki',
+					autogenerate: { directory: 'wiki' },
+				},
+				{
+					label: 'Outro',
+					autogenerate: { directory: 'outro' },
 				},
 				{
 					label: 'Reference',
