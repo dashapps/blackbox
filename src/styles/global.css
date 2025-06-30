@@ -68,7 +68,7 @@ h2, h3, h4, h5, h6 {
     "wght" 800,
     "CRSV" 0.6,
     "SHRP" 29;
-
+  text-transform: uppercase;
 }
 
 .button{
@@ -76,14 +76,78 @@ h2, h3, h4, h5, h6 {
 }
 
 h2 {
-  font-size: 1.7rem;
+  font-size: 1.65rem;
   line-height: 1.4;
   font-weight: 600;
 }
 
 p {
   line-height: 1.4;
-  font-weight: 400;
+  font-weight: 200;
+  font-size: 1.12rem;
+}
+
+body ul, body ol {
+  margin: 1.2em 0 1.2em 2em;
+  padding: 0;
+  font-size: 1.15rem;
+  font-weight: 200;
+  line-height: 1.4;
+}
+
+body li {
+  margin-bottom: 0.4em;
+}
+
+/* Сброс стилей списков только для сайдбара */
+.starlight-sidebar ul,
+.starlight-sidebar ol,
+.starlight-sidebar li,
+.starlight-sidebar ul li,
+.starlight-sidebar ol li,
+.sl-sidebar ul,
+.sl-sidebar ol,
+.sl-sidebar li,
+.sl-sidebar ul li,
+.sl-sidebar ol li {
+  all: unset;
+  list-style: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+}
+
+/* Стили списков и цитат только для контента */
+@layer starlight {
+  .sl-markdown-content ul {
+    list-style-type: disc;
+    margin-left: 2em;
+  }
+  .sl-markdown-content ol {
+    list-style-type: decimal;
+    margin-left: 2em;
+  }
+  .sl-markdown-content li {
+    margin-bottom: 0.4em;
+  }
+  .sl-markdown-content blockquote {
+    border-left: 4px solid var(--color-accent-600);
+    background: none;
+    border-radius: 0;
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: 300;
+    color: var(--color-accent-600);
+    padding: 0.7em 1em;
+    margin: 1.2em 0;
+  }
+}
+
+/* Бордер-радиус для зелёной плашки в сайдбаре */
+.sl-sidebar [aria-current="page"],
+.starlight-sidebar [aria-current="page"] {
+  border-radius: 8px 24px 24px 8px !important;
 }
 
 
