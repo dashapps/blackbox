@@ -44,23 +44,46 @@ body {
     "SHRP" 26;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1 {
   font-family: var(--font-sans);
   font-variation-settings:
     "slnt" 0,
     "wght" 800,
     "CRSV" 0.6,
     "SHRP" 29;
+    font-style: 2 rem;
+  color: var(--color-accent-900);
+}
+
+@media (prefers-color-scheme: dark) {
+  h1 {
+    color: var(--color-accent-200);
+  }
+}
+
+h2, h3, h4, h5, h6 {
+  font-family: var(--font-sans);
+  font-variation-settings:
+    "slnt" 0,
+    "wght" 800,
+    "CRSV" 0.6,
+    "SHRP" 29;
+
 }
 
 .button{
   border-radius: 8px 24px 8px 24px;
 }
 
-.test-font {
-  font-family: 'JetBrains Mono' !important;
-  font-size: 2rem;
-  color: red;
+h2 {
+  font-size: 1.7rem;
+  line-height: 1.4;
+  font-weight: 600;
+}
+
+p {
+  line-height: 1.4;
+  font-weight: 400;
 }
 
 
