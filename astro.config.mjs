@@ -21,17 +21,7 @@ export default defineConfig({
 				{ icon: 'linkedin', label: 'LinkedIn', href: 'https://www.linkedin.com/in/dariazorina' }
 			],
 			sidebar: [
-				{
-					label: 'Channels',
-					autogenerate: { directory: 'channels' },
-				},
-				{
-					label: 'Guides',
-					items: [
-						// Each item here is one entry in the navigation menu.
-						{ label: 'Example Guide', slug: 'guides/example' },
-					],
-				},
+
 				{
 					label: 'Intro',
 					autogenerate: { directory: 'intro' },
@@ -44,6 +34,10 @@ export default defineConfig({
 					label: 'Pipeline',
 					autogenerate: { directory: 'pipeline' },
 				},
+{
+					label: 'Channels',
+					autogenerate: { directory: 'channels' },
+				},
 				{
 					label: 'Wiki',
 					autogenerate: { directory: 'wiki' },
@@ -51,11 +45,7 @@ export default defineConfig({
 				{
 					label: 'Outro',
 					autogenerate: { directory: 'outro' },
-				},
-				{
-					label: 'Reference',
-					autogenerate: { directory: 'reference' },
-				},
+				}
 			],
 			customCss: [
 				'./src/styles/global.css',
