@@ -15,6 +15,7 @@ export default defineConfig({
 				light: './src/assets/maugli_blackbox_light_theme_logo.svg',
 				dark: './src/assets/maugli_blackbox_dark_theme_logo.svg',
 				replacesTitle: true,
+				link: '/intro/01/',
 			},
 			social: [
 				{ icon: 'telegram', label: 'Telegram', href: 'https://t.me/darrrina' },
