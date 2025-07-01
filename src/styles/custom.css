@@ -2,12 +2,13 @@
 @import '@fontsource-variable/geologica';
 @import '@fontsource/jetbrains-mono';
 :root {
-  
+  color-scheme: dark;
   --sl-font-system: 'Geologica Variable', sans-serif;
     --sl-font-system-mono: 'JetBrains Mono', monospace;
   --sl-content-width: 50rem;
     --sl-text-5xl: 3.5rem;
     --my-radius: 8px 24px 8px 24px;
+
 }
 
 .my-button {
@@ -15,4 +16,11 @@
   background: #ECF3F3;
   padding: 2rem;
   margin: 2rem 0;
+}
+
+
+
+/* Принудительно ставим dark, независимо от system preferences */
+html {
+  color-scheme: dark;
 }

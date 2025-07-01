@@ -10,6 +10,7 @@ import tailwindcss from '@tailwindcss/vite';
 export default defineConfig({
 	integrations: [
 		starlight({
+
 			title: 'Maugli BlackBox',
 			logo: {
 				light: './src/assets/maugli_blackbox_light_theme_logo.svg',
@@ -22,7 +23,6 @@ export default defineConfig({
 				{ icon: 'linkedin', label: 'LinkedIn', href: 'https://www.linkedin.com/in/dariazorina' }
 			],
 			sidebar: [
-
 				{
 					label: 'Intro',
 					autogenerate: { directory: 'intro' },
@@ -35,7 +35,7 @@ export default defineConfig({
 					label: 'Pipeline',
 					autogenerate: { directory: 'pipeline' },
 				},
-{
+				{
 					label: 'Channels',
 					autogenerate: { directory: 'channels' },
 				},
