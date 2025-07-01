@@ -3,5 +3,15 @@ export const prerender = true;
 ---
 
 <head>
-  <script is:inline type="module" src="/src/scripts/force-dark-theme.js"></script>
+  <script>
+    try {
+      const stored = JSON.parse(localStorage.getItem("starlight.theme"));
+      if (!stored || stored.mode !== "dark") {
+        localStorage.setItem("starlight.theme", JSON.stringify({ mode: "dark" }));
+      }
+    } catch (e) {}
+  </script>
+  <style>
+    html { color-scheme: dark !important; background: #111 !important; }
+  </style>
 </head>

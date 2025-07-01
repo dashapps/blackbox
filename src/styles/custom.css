@@ -22,5 +22,26 @@
 
 /* Принудительно ставим dark, независимо от system preferences */
 html {
-  color-scheme: dark;
+  color-scheme: dark !important;
+}
+
+html,
+:root,
+html[data-theme="dark"],
+html[data-theme="light"] {
+  color-scheme: dark !important;
+  background: #101A28 !important;
+  --color-gray-100: #F9FBFB !important;
+  --color-gray-200: #ECF3F3 !important;
+  --color-gray-300: #D6E4E5 !important;
+  --color-gray-400: #788DAB !important;
+  --color-gray-500: #465975 !important;
+  --color-gray-700: #1D2F49 !important;
+  --color-gray-800: #101A28 !important;
+  --color-gray-900: #0F1724 !important;
+  --color-accent-200: #66EB69 !important;
+  --color-accent-600: #1BD91F !important;
+  --color-accent-900: #13AD16 !important;
+  --color-accent-950: #107F13 !important;
+  /* Добавьте любые другие ваши переменные сюда */
 }
