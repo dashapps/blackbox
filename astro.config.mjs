@@ -27,26 +27,32 @@ export default defineConfig({
 				{
 					label: 'Intro',
 					autogenerate: { directory: 'intro' },
+					collapsed: true,
 				},
 				{
 					label: 'Start',
 					autogenerate: { directory: 'start' },
+					collapsed: true,
 				},
 				{
 					label: 'Pipeline',
 					autogenerate: { directory: 'pipeline' },
+					collapsed: true,
 				},
 				{
 					label: 'Channels',
 					autogenerate: { directory: 'channels' },
+					collapsed: true,
 				},
 				{
 					label: 'Wiki',
 					autogenerate: { directory: 'wiki' },
+					collapsed: true,
 				},
 				{
 					label: 'Outro',
 					autogenerate: { directory: 'outro' },
+					collapsed: true,
 				}
 			],
 			customCss: [
