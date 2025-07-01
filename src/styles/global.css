@@ -79,7 +79,13 @@ h2, h3, h4, h5, h6 {
 
 h2 {
   font-size: 1.65rem;
-  line-height: 1.4;
+  line-height: 1.13;
+  font-weight: 600;
+    color: var(--color-gray-500);
+}
+h3 {
+  font-size: 1.4rem;
+  line-height: 1.13;
   font-weight: 600;
     color: var(--color-gray-500);
 }
@@ -131,14 +137,14 @@ body li {
 @layer starlight {
   .sl-markdown-content ul {
     list-style-type: disc;
-    margin-left: 2em;
+    margin-left: 1.1em;
   }
   .sl-markdown-content ol {
     list-style-type: decimal;
-    margin-left: 2em;
+    margin-left: 1.2em;
   }
   .sl-markdown-content li {
-    margin-bottom: 0.4em;
+    margin-bottom: 0.3em;
   }
   .sl-markdown-content blockquote {
     border-left: 4px solid var(--color-accent-600);
@@ -147,8 +153,8 @@ body li {
     font-family: 'JetBrains Mono', monospace;
     font-weight: 300;
     color: var(--color-accent-600);
-    padding: 0.7em 1em;
-    margin: 1.2em 0;
+    padding: 0.6em 1em;
+    margin: 0.7em 0;
   }
 }
 
