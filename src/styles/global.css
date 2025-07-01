@@ -9,6 +9,8 @@
 
 
 :root {
+  data-theme: dark  ;
+  color-scheme: dark !important;
   --font-sans: 'Geologica Variable', sans-serif;
   --font-serif: 'Geologica Variable', serif;
   --font-system: 'Geologica Variable', sans-serif;
