@@ -26,31 +26,37 @@ export default defineConfig({
 			sidebar: [
 				{
 					label: 'Intro',
+					translations: { ru: 'Введение', de: 'Einleitung', es: 'Introducción' },
 					autogenerate: { directory: 'intro' },
 					collapsed: true,
 				},
 				{
 					label: 'Start',
+					translations: { ru: 'Старт', de: 'Start', es: 'Inicio' },
 					autogenerate: { directory: 'start' },
 					collapsed: true,
 				},
 				{
 					label: 'Pipeline',
+					translations: { ru: 'Процесс', de: 'Ablauf', es: 'Proceso' },
 					autogenerate: { directory: 'pipeline' },
 					collapsed: true,
 				},
 				{
 					label: 'Channels',
+					translations: { ru: 'Каналы', de: 'Kanäle', es: 'Canales' },
 					autogenerate: { directory: 'channels' },
 					collapsed: true,
 				},
 				{
 					label: 'Wiki',
+					translations: { ru: 'Вики', de: 'Wiki', es: 'Wiki' },
 					autogenerate: { directory: 'wiki' },
 					collapsed: true,
 				},
 				{
 					label: 'Outro',
+					translations: { ru: 'Заключение', de: 'Abschluss', es: 'Final' },
 					autogenerate: { directory: 'outro' },
 					collapsed: true,
 				}
@@ -68,14 +74,17 @@ export default defineConfig({
 				ru: {
 					label: 'Русский',
 					lang: 'ru',
+					
 				},
 				de: {
 					label: 'Deutsch',
 					lang: 'de',
+					
 				},
 				es: {
 					label: 'Español',
 					lang: 'es',
+				
 				},
 			},
 		}),
